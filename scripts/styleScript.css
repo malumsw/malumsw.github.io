@@ -1,0 +1,190 @@
+/* ! Base Style */
+
+body{font-family: 'Inter', sans-serif;font-size: 16px;background-color: #000;}
+
+a{text-decoration: none;}
+
+h2, h4, h5, p{color: whitesmoke; padding-bottom: 30px;}
+
+h3{padding-bottom: 30px;}
+
+.big-text{font-size: 70px;font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+.intro-text{text-transform: uppercase; font-size: 20px;font-weight: bold;}
+
+.button{padding: 18px 20px;background: #316bff;color: #fff;display: inline-block;border-radius: 4px;}
+
+.titlescript{color: #e30022;}
+
+
+@media (max-width: 1092px) {
+    .big-text{font-size: 40px;} 
+    /* 40px */
+}
+
+
+
+
+/* ! Header */
+
+.header{
+    /* border: 1px solid red; */ /*cool ASF---*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%; /*left:0*/
+    /* translate: translateX(-50%); */
+    translate: -50%;
+    padding: 30px;
+    display: flex;
+    /* background: #000; */
+    max-width: 1350px;
+}
+
+.appleL{
+    width: 55px;
+    height: 50px;
+}
+
+.discord{display: none;}
+.statusa{display: none;}
+
+.at1{text-align: center;}
+.bapos{padding-left: 250px;}
+
+
+
+/*.logo{ border: 1px solid red;} */ /*COol ASF---*/
+.logo{z-index: 1;}
+
+
+.menu{
+    /* border: 1px solid red; */ /*COOL ASF---*/
+    width: 100%;
+    z-index: 0;
+}
+
+.menu li{display: inline-block;}
+.menu li a{color: #fff; padding: 15px; display: block;}
+
+.hamburger{display: none;}
+
+
+/*.cta{ border: 1px solid red;} */ /*COOL ASF---*/
+
+@media (max-width: 1092px){
+    
+    .cta{
+        display: none;
+    }
+    
+    
+    .menu{position: absolute; top: 0; right: -100%; background: url("../imgs/BlackAppleImage.png") no-repeat center center; height: 100vh;padding-top: 80px;}
+    .menu li{display: block;}
+    .menu li a{padding: 0px 40px;font-size: 60px;margin-top: 90px;} /*padd 15px 30px     fs20px*/
+    
+    .menu--open{right: 0%;}
+
+    .hamburger{
+        display: block;
+        width: 50px;
+        height: 50px; /*30px  both*/
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        
+    }
+    .hamburger span{background: whitesmoke; height: 5px; width: 100%;display: block;margin-bottom: 7px;} /*meno 2 tutte e due*/
+}
+
+
+
+
+/* ! Hero */
+.hero{
+    /* background: #000; */
+    height: 100vh;
+    display: flex; width: 100%;align-items: center;
+    background:  linear-gradient(210deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+     url("../imgs/wallpaperflare.com_3.jpg") no-repeat center center; /*217deg*/ /*BlackAppleImage.png*/
+    background-size: cover;
+}
+
+.hero__content{
+    /* border: 1px solid red; */ /*COOL ASF---*/
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+
+.hero__content h1{color: #2320f0 ;}
+.hero__content p{color: rgb(0, 179, 233);} /*#fff*/
+
+
+@media (max-width: 1092px){
+    .button{height: 90px; padding: 35px 20px;text-align: center;}
+    .hero__content h1{color: #20f0df ;}
+}
+
+
+
+/* Grid */
+
+.grid{display: flex;max-width: 1350px;padding: 0 30px;margin: 0 auto;}
+.grid .col{width: 100%;}
+
+
+
+@media (max-width: 1092px){
+    .grid{flex-wrap: wrap;}
+}
+
+/*Carousel*/
+
+.main-carousel{padding: 40px 0;}
+
+.carousel-cell{
+    height: 350px;
+    width: 350px;
+    background: #480607;
+    border-radius: 100%;
+    /*line-height: 0px;*/ /*350px*/
+    text-align: center;
+    margin-right: 40px;
+}
+
+
+@media (max-width: 1092px){
+    .main-carousel--hide{display: none;}
+}
+
+
+
+/*Helpers*/
+.mt-1{margin-top: 50px;}
+.mt-2{margin-top: 100px;}
+.mt-3{margin-top: 150px;}
+.tw{color: #fff;}
+
+.testp{padding: 40px; line-height: 320px;}
+.textsw{padding: 75px;}
+
+.downloadScript{background-color: #7f1734;padding: 15px 80px;color: #ff2800;border-radius: 40px;}
+
+
+
+
+
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}

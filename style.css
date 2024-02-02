@@ -1,0 +1,249 @@
+
+/* ! Base Style */
+
+body{font-family: 'Inter', sans-serif;font-size: 16px;background-color: #000;}
+
+a{text-decoration: none;}
+
+h1, h2, h3, h4, h5, p{color: whitesmoke; padding-bottom: 30px;}
+
+.big-text{font-size: 70px;font-weight: 900;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+
+.intro-text{text-transform: uppercase; font-size: 20px;font-weight: bold;}
+
+.button{padding: 18px 20px;color: #fff;display: inline-block;border-radius: 4px;}
+
+.dsButton{
+    background: #316bff;
+}
+.dsButton:hover{
+    box-shadow: 5px 5px 10px rgba(27, 46, 218, 0.5);
+}
+.statusAB{background: #e30022;}
+
+@media (max-width: 1092px) {
+    .big-text{font-size: 40px;} 
+    /* 40px */
+}
+
+
+
+
+/* ! Header */
+
+.header{
+    /* border: 1px solid red; */ /*cool ASF---*/
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%; /*left:0*/
+    /* translate: translateX(-50%); */
+    translate: -50%;
+    padding: 30px;
+    display: flex;
+    /* background: #000; */
+    max-width: 1350px;
+}
+
+.appleL{
+    width: 55px;
+    height: 50px;
+    display: block;
+    animation: spin 4s linear infinite;
+}
+@keyframes spin {
+    0% { 
+      transform: rotate(0deg);
+   }
+    100% {
+      transform: rotate(360deg);
+   }
+}
+
+
+/*.logo{ border: 1px solid red;} */ /*COol ASF---*/
+.logo{z-index: 1;}
+
+
+.menu{
+    /* border: 1px solid red; */ /*COOL ASF---*/
+    width: 100%;
+    z-index: 0;
+}
+
+.menu li{display: inline-block;}
+.menu li a{color: #fff; padding: 15px; display: block;}
+
+.hamburger{display: none;}
+
+
+/*.cta{ border: 1px solid red;} */ /*COOL ASF---*/
+
+@media (max-width: 1092px){
+    
+    .cta{
+        display: none;
+    }
+    
+    
+    .menu{position: absolute; top: 0; right: -100%; background: url("imgs/BlackAppleImage.png") no-repeat center center; height: 100vh;padding-top: 80px;}
+    .menu li{display: block;}
+    .menu li a{padding: 0px 40px;font-size: 60px;margin-top: 90px;} /*padd 15px 30px     fs20px*/
+    
+    .menu--open{right: 0%;}
+
+    .hamburger{
+        display: block;
+        width: 50px;
+        height: 50px; /*30px  both*/
+        /* border: 1px solid red; */
+        position: absolute;
+        top: 40px;
+        right: 30px;
+        
+    }
+    .hamburger span{background: whitesmoke; height: 5px; width: 100%;display: block;margin-bottom: 7px;} /*meno 2 tutte e due*/
+}
+
+
+
+
+/* ! Hero */
+.hero{
+    /* background: #000; */
+    height: 100vh;
+    display: flex; width: 100%;align-items: center;
+    background:  linear-gradient(210deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+     url("imgs/wallpaperflare.com_5.jpg") no-repeat center center; /*217deg*/ /*BlackAppleImage.png*/
+    background-size: cover;
+}
+
+.hero__content{
+    /* border: 1px solid red; */ /*COOL ASF---*/
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+
+.hero__content h1,
+.hero__content p{color: rgb(62, 40, 255);} /*#fff*/
+
+
+@media (max-width: 1092px){
+    .button{height: 90px; padding: 35px 20px;text-align: center;}
+    
+}
+
+
+
+/* .fade-in {
+    opacity: 0;
+    transition: 2s;
+} */
+
+.entrance-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+    /* background-color: #04034bd5; */
+    width: 100%;
+    height: 100%;
+    background-image: url("imgs/wallpaperflare.com_4.jpg");
+    
+}
+   
+.entrance-Second{
+    border-radius: 5%;
+    border: 1px solid rgb(33, 0, 63);
+    box-shadow: 0 0 70px rgb(136, 9, 187);
+
+}
+.entrance-Third{
+    border: 3px solid rgb(44, 2, 122);
+    margin-right: 30px;
+    margin-left: 30px;
+    border-radius: 4%;
+}
+
+.coolhr {
+        height: 4px;  
+        width: 150px;
+        background-color: #0066ff; 
+        border: none;
+        transition: background-color 0.5s ease; 
+        animation: color-change 3s infinite; 
+      
+}
+           
+@keyframes color-change {
+        0% { background-color: #0066ff; }
+      
+        50% { background-color: #1100ff; }
+      
+        100% { background-color: #4000f0; }
+      
+}
+
+
+
+#circleIphone{
+    width: 500px;
+    height: 80px;
+
+}
+
+.entrance-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #ff1b4c;
+    margin: 0;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: textAnimation 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes textAnimation {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.hidestart{
+    display: none;
+}
+
+
+*,
+*::before,
+*::after{
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+

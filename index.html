@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>AppleSW</title>
+    
+    <link rel="icon" href="apple.ico" type="image/icon type">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body >
+    <!-- lheader>.logo
+    .menu>li*3 -->
+
+    <div class="entrance-container" id="startdiv">
+        <div class="entrance-Second">
+            <p>____</p>
+            <br><br>
+            <div class="entrance-Third">
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <p class="entrance-text">Welcome Inside Apple</p>
+                <hr class="coolhr">
+                <br><br><br><br>
+                <p class="entrance-text">Download And Learn</p>
+                <hr class="coolhr">
+                <br><br><br><br>
+                <p class="entrance-text">By Apple</p>
+                <hr class="coolhr">
+                <br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <br><br>
+            <ion-icon id="circleIphone" name="stop-circle-outline"></ion-icon>
+        </div>
+    </div>
+
+    <header class="hidestart">
+        <div class="header">
+            <div class="logo">
+                <img class="appleL" src="apple.ico" alt="">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="scripts/scripts.html">Scripts</a></li>
+                <li><a href="information/info.html">Information</a></li>
+            </ul>
+            <div class="cta">
+                <a href="https://discord.gg/xxaqAWCg6Q" target="_blank" class="button dsButton"> Discord</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <main class="hidestart">
+        <div class="hero">
+            <div class="hero__content">
+                <p class="intro-text">By Apple</p>
+                <h1 class="big-text">Apple Enviroment </h1>   <!--Titolo Della Mia Pagina Web -->
+                <a href="apps/apps.html" target="_blank" class="button statusAB">Apple's Apps</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="hidestart">
+
+    </footer>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $( document ).ready(function() {
+
+            $( ".hamburger" ).on('click', function() {
+                $(".menu").toggleClass("menu--open");
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
