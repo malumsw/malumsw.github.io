@@ -1,6 +1,6 @@
 /* ! Base Style */
 
-body{font-family: 'Inter', sans-serif;font-size: 16px;background-color: #000;}
+body{font-family: 'Inter', sans-serif;font-size: 16px;background-color: #000000;}
 
 a{text-decoration: none;}
 
@@ -84,7 +84,7 @@ h3{padding-bottom: 30px;}
     
     .menu{position: absolute; top: 0; right: -100%; background: url("../imgs/BlackAppleImage.png") no-repeat center center; height: 100vh;padding-top: 80px;}
     .menu li{display: block;}
-    .menu li a{padding: 0px 40px;font-size: 60px;margin-top: 90px;} /*padd 15px 30px     fs20px*/
+    .menu li a{padding: 0px 40px;font-size: 60px;margin-top: 90px;display: flex;} /*padd 15px 30px     fs20px*/
     
     .menu--open{right: 0%;}
 
@@ -179,6 +179,114 @@ h3{padding-bottom: 30px;}
 
 
 
+
+.DbuDiv{
+    /* background: #000; */
+    height: 100vh;
+    display: flex; width: 100%;
+    background:  linear-gradient(210deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+     url("../imgs/Starsspace.jpg") no-repeat center center; /*217deg*/ /*BlackAppleImage.png*/
+    background-size: cover;
+}
+
+.coolhr {
+    height: 4px;  
+    background-color: #0066ff; 
+    border: none;
+    transition: background-color 0.5s ease; 
+    animation: color-change 3s infinite; 
+  
+}
+       
+@keyframes color-change {
+    0% { background-color: #0099ff; }
+  
+    25% { background-color: #1100ff; }
+  
+    50% { background-color: #3703b1; }
+    
+    75% { background-color: #030fb1; }
+    
+    100% { background-color: #0333d1; }
+}
+
+
+
+
+
+#DbuScripts {
+    position: relative;
+    width: 750px;
+    height: 500px;
+    background: linear-gradient(210deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%), url("../imgs/BeerusPlanet.png") no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 50px;
+    opacity: 0;
+
+    transition: opacity 0.3s ease-in-out;
+    margin-top: 75px;
+    margin-left: 100px;
+}
+
+#DbuScripts.visible {
+    opacity: 1;
+}
+
+#DownloadHub {
+    display: inline-block;
+    background-color: #480607;
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    color: yellow;
+    border: 2px solid #3703b1;
+    position: absolute;
+    bottom: 300px;
+    left: 40px;
+    font-size: 15.3px;
+}
+
+#DownloadHub:hover {
+    background-color: #b4090c;
+}
+
+#DownloadAFStats {
+    display: inline-block;
+    background-color: #480607;
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    color: yellow;
+    border: 2px solid #3703b1;
+    position: absolute;
+    bottom: 430px;
+    right: 70px;
+    font-size: 15.3px;
+}
+
+#DownloadAFStats:hover {
+    background-color: #b4090c;
+}
+
+#DownloadAFReb {
+    display: inline-block;
+    background-color: #480607;
+    width: 150px;
+    height: 35px;
+    border-radius: 25px;
+    color: yellow;
+    border: 2px solid #3703b1;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    font-size: 15.3px;
+}
+
+#DownloadAFReb:hover {
+    background-color: #b4090c;
+}
 
 
 *,
