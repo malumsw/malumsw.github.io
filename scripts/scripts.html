@@ -51,7 +51,19 @@
                 <h1 class="big-text at1">Scripts Sheets</h1>   <!--Titolo Della Mia Pagina Web -->
             </div>
         </div>
+        <hr class="coolhr" >
 
+        <div class="DbuDiv" id="DbuDiv">
+            <div id="DbuScripts">
+
+                <button id="DownloadHub">Download HubSW</button>
+                
+                <button id="DownloadAFStats">Download AF[Stats]</button>
+
+                <button id="DownloadAFReb">Download AF[Reb]</button>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
@@ -75,6 +87,116 @@
 
         });
 
+    </script>
+    
+
+    <script>
+        /*function isInViewport(element) {
+          var bounding = element.getBoundingClientRect();
+          return (
+              bounding.top >= 0 &&
+              bounding.left >= 0 &&
+              bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+              bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }*/
+        function isInViewport(element) {
+            var rect = element.getBoundingClientRect();
+            var windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+      
+            // Check if at least half of the element is in the viewport
+            return (
+              (rect.top + rect.height / 2) >= 0 &&
+              (rect.bottom - rect.height / 2) <= windowHeight
+            );
+        }
+    
+        window.addEventListener('scroll', function() {
+          var DbuScriptsDiv = document.getElementById('DbuScripts');
+          var DbuDiv = document.getElementById('DbuDiv');
+    
+          if (isInViewport(DbuDiv)) {
+            DbuScriptsDiv.classList.add('visible');
+          } else {
+            DbuScriptsDiv.classList.remove('visible');
+          }
+        });
+    </script>
+
+
+    <script>
+        document.getElementById('DownloadHub').addEventListener('click', function() {
+            
+            var fileUrl = 'https://raw.githubusercontent.com/malumsw/DbuHub/main/AppleSWHub.lua';
+        
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    var link = document.createElement('a');
+        
+                    link.href = window.URL.createObjectURL(blob);
+        
+                    var filename = fileUrl.split('/').pop();
+                    
+                    link.download = filename;
+        
+                    document.body.appendChild(link);
+
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => {
+                    console.error('Error Downloading FileSW:', error);
+                });
+        });
+        document.getElementById('DownloadAFStats').addEventListener('click', function() {
+            
+            var fileUrl = 'https://raw.githubusercontent.com/malumsw/autofarmdbu/main/AppleSWAFStats.lua';
+        
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    var link = document.createElement('a');
+        
+                    link.href = window.URL.createObjectURL(blob);
+        
+                    var filename = fileUrl.split('/').pop();
+                    
+                    link.download = filename;
+        
+                    document.body.appendChild(link);
+
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => {
+                    console.error('Error Downloading FileSW:', error);
+                });
+        });
+        document.getElementById('DownloadAFReb').addEventListener('click', function() {
+            
+            var fileUrl = 'https://raw.githubusercontent.com/malumsw/AutoFarmRebSW/main/AutoFarmSWReb.lua';
+        
+            fetch(fileUrl)
+                .then(response => response.blob())
+                .then(blob => {
+                    var link = document.createElement('a');
+        
+                    link.href = window.URL.createObjectURL(blob);
+        
+                    var filename = fileUrl.split('/').pop();
+                    
+                    link.download = filename;
+        
+                    document.body.appendChild(link);
+
+                    link.click();
+                    document.body.removeChild(link);
+                })
+                .catch(error => {
+                    console.error('Error Downloading FileSW:', error);
+                });
+        });
     </script>
 
 </body>
