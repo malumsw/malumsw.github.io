@@ -54,7 +54,7 @@
         <hr class="coolhr" >
 
         <div class="DbuDiv" id="DbuDiv">
-            <div id="DbuScripts">
+            <div id="DbuScripts" class="DbuScripts">
 
                 <button id="DownloadHub">Download HubSW</button>
                 
@@ -83,6 +83,8 @@
             $( ".hamburger" ).on('click', function() {
                 $(".menu").toggleClass("menu--open");
                 $(".main-carousel").toggleClass("main-carousel--hide")
+                $(".DbuDiv").toggleClass("DbuDiv--hide")
+                
             });
 
         });
