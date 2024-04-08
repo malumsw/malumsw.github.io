@@ -62,66 +62,275 @@ footer {
 
 
 .AFRScriptDiv {
-  position: absolute; /* Positioning method */
+  position: absolute; 
   width: 40%;
   height: 70%;
-  background-color: rgba(23, 174, 245, 0.5); /* Use rgba for transparency */
+  background-color: rgba(23, 174, 245, 0.5); 
   border-radius: 50px;
 
   text-align: left;
 
 
-  padding: 5px 0; /* Add padding to the top and bottom */
-  margin: 5px 0; /* Add margin to the top and bottom */
+  padding: 5px 0; 
+  margin: 5px 0; 
 
 }
 
 #OneDivAFR{
-  top: 190%; /* Adjust top position */
-  left: 25%; /* Position from the left */
-  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+  top: 190%; 
+  left: 25%; 
+  transform: translate(-50%, -50%); 
 }
 #TwoDivAFR{
-  top: 190%; /* Adjust top position */
-  left: 75%; /* Position from the left */
-  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+  top: 190%; 
+  left: 75%; 
+  transform: translate(-50%, -50%); 
 }
 
 
 .ScriptPart{
-  font-size: 1.65vh;
+  font-size: 1.55vh;
   opacity: 1;
   margin-left: 15px;
 
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1268px) and (max-hegiht: 1080px){
   .ScriptPart {
     font-size: 1.55vh; 
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1398px){
   .ScriptPart {
-    font-size: 1.5vh; 
+    font-size: 1.3vh; 
   }
 }
-@media screen and (max-width: 1080px) {
-  .ScriptPart {
-    font-size: 1.4vh; 
-  }
-}
-@media screen and (max-width: 820px) {
-  .ScriptPart {
-    font-size: 1.2vh; 
-  }
-}
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 908px){
   .ScriptPart {
     font-size: 1.1vh; 
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 758px){
   .ScriptPart {
-    font-size: 1vh; 
+    font-size: 0.925vh; 
+  }
+}
+
+@media screen and (max-hegiht: 780px){
+  #OneDivAFR{
+    top: 200%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 200%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+
+@media screen and (max-height: 650px){
+  #OneDivAFR{
+    top: 205%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 205%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+
+@media screen and (max-height: 510px){
+  #OneDivAFR{
+    top: 215%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 215%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 430px){
+  #OneDivAFR{
+    top: 220%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 220%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 370px){
+  #OneDivAFR{
+    top: 235%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 235%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 320px){
+  #OneDivAFR{
+    top: 245%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 245%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 290px){
+  #OneDivAFR{
+    top: 255%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 255%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 250px){
+  #OneDivAFR{
+    top: 270%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 270%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 230px){
+  #OneDivAFR{
+    top: 280%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 280%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 210px){
+  #OneDivAFR{
+    top: 290%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 290%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 200px){
+  #OneDivAFR{
+    top: 295%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 295%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 190px){
+  #OneDivAFR{
+    top: 305%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 305%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 180px){
+  #OneDivAFR{
+    top: 310%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 310%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 150px){
+  #OneDivAFR{
+    top: 345%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 345%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 120px){
+  #OneDivAFR{
+    top: 430%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 430%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 100px){
+  #OneDivAFR{
+    top: 500%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 500%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 80px){
+  #OneDivAFR{
+    top: 600%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 600%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
+  }
+}
+@media screen and (max-height: 50px){
+  #OneDivAFR{
+    top: 700%; 
+    left: 25%; 
+    transform: translate(-50%, -50%); 
+  }
+  #TwoDivAFR{
+    top: 700%; 
+    left: 75%; 
+    transform: translate(-50%, -50%); 
   }
 }
