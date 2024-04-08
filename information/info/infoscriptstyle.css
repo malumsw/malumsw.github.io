@@ -116,7 +116,7 @@ footer {
   }
 }
 
-@media screen and (max-hegiht: 780px){
+@media screen and (max-height: 780px){
   #OneDivAFR{
     top: 200%; 
     left: 25%; 
