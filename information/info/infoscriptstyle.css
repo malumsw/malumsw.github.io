@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #10a9e6;
+  }
+header, footer, main {
+    padding: 20px;
+    text-align: center;
+  }
+header {
+    background-color: #0c94ca;
+    color: rgb(24, 4, 139);
+  }
+footer {
+    background-color: #04036e;
+    color: rgb(75, 102, 255);
+}
+
+.SectionGen{
+  height: 100vh;
+}
+
+.MediumBigText{
+  font-size: 20px;
+}
+
+.MediumText{
+  font-size: 18px;
+}
+
+.BigText{
+  font-size: 24px;
+}
+
+#AFR{
+  background-color: #120fce;
+  border-radius: 3%;
+  color: rgb(255, 255, 0);
+  background: linear-gradient(210deg, rgba(12, 2, 148, 0.8), rgba(255, 0, 0, 0) 70.71%), url("/imgs/bluecoolbg.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: center;;
+}
+#Hub{
+  background-color: #120fce;
+  border-radius: 3%;
+  color: rgb(255, 255, 0);
+  background: linear-gradient(210deg, rgba(12, 2, 148, 0.8), rgba(255, 0, 0, 0) 70.71%), url("/imgs/bluecoolbg2.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: center;;
+}
+
+.coolhr {
+  height: 4px;  
+  background-color: #0052ce; 
+  border: none;
+  transition: background-color 0.5s ease; 
+  animation: color-change 3s infinite; 
+  width: auto;
+
+}
+
+
+.AFRScriptDiv {
+  position: absolute; /* Positioning method */
+  width: 40%;
+  height: 70%;
+  background-color: rgba(23, 174, 245, 0.5); /* Use rgba for transparency */
+  border-radius: 50px;
+
+  text-align: left;
+
+
+  padding: 5px 0; /* Add padding to the top and bottom */
+  margin: 5px 0; /* Add margin to the top and bottom */
+
+}
+
+#OneDivAFR{
+  top: 190%; /* Adjust top position */
+  left: 25%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+}
+#TwoDivAFR{
+  top: 190%; /* Adjust top position */
+  left: 75%; /* Position from the left */
+  transform: translate(-50%, -50%); /* Center the element horizontally and vertically */
+}
+
+
+.ScriptPart{
+  font-size: 1.65vh;
+  opacity: 1;
+  margin-left: 15px;
+
+}
+
+@media screen and (max-width: 1268px) {
+  .ScriptPart {
+    font-size: 1.55vh; 
+  }
+}
+@media screen and (max-width: 1200px) {
+  .ScriptPart {
+    font-size: 1.5vh; 
+  }
+}
+@media screen and (max-width: 1080px) {
+  .ScriptPart {
+    font-size: 1.4vh; 
+  }
+}
+@media screen and (max-width: 820px) {
+  .ScriptPart {
+    font-size: 1.2vh; 
+  }
+}
+@media screen and (max-width: 680px) {
+  .ScriptPart {
+    font-size: 1.1vh; 
+  }
+}
+@media screen and (max-width: 380px) {
+  .ScriptPart {
+    font-size: 1vh; 
+  }
+}
