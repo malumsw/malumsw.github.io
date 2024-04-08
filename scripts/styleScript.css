@@ -304,50 +304,83 @@ h3{padding-bottom: 30px;}
     position: absolute;
     bottom: 9.7%;
     right: 27%;
-    color: #7a0507;
+    color: #fbff15;
 }
 #InfoAFR:hover{
-    color: #480607;
+    color: #aeb102;
 }
 
 
 #InfoAFR2{
+    font-size:24px;
     display: inline-block;
     position: absolute;
     bottom: 9.7%;
     right: 27%;
-    color: #7a0507;
+    color: #fbff15;
 }
 #InfoAFR2:hover{
-    color: #480607;
+    color: #aeb102;
 }
 
 
 
 #InfoHub{
+    
     display: inline-block;
     position: absolute;
     bottom: 61.2%;
     right: 68.5%;
-    color: #7a0507;
+    color: #fbff15;
 }
 #InfoHub:hover{
-    color: #480607;
+    color: #aeb102;
 }
 
 
 #InfoHub2{
+    font-size:24px;
     display: inline-block;
     position: absolute;
     bottom: 61.2%;
     right: 68.5%;
-    color: #7a0507;
+    color: #fbff15;
 }
 #InfoHub2:hover{
-    color: #480607;
+    color: #aeb102;
 }
 
+@media screen and (max-width: 110px){
+    #InfoHub{
+        bottom: 60.2%;
+        right: 62.5%;
+    }
+    
+}
+@media screen and (max-width: 900px){
+    #InfoHub{
+        bottom: 60.2%;
+        right: 85.5%;
+    }
+    #InfoHub2{
+        font-size: 30px;
+    }
+    #InfoAFR2{
+        font-size: 30px;
+    }
+    #DownloadHub{
+        bottom: 60%;
+        left: 15%;
+        font-size: 1.2vh;
+    }
+    #DownloadAFReb{
+        font-size: 1.2vh;
+    }
+    #DownloadAFStats{
+        font-size: 1.2vh;
+    }
 
+}
 
 
 *,
